@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="number" name="number" id="number" />
+    <button
+      onclick="document.querySelector('div#res').innerHTML = addTwo(Number(document.querySelector('input#number').value))"
+    >
+      Add 2
+    </button>
+    <button
+      onclick="document.querySelector('div#res').innerHTML = sumNumbers(Number(document.querySelector('input#number').value), 10)"
+    >
+      Sum 10
+    </button>
+
+    <div id="res"></div>
+    <button onclick="signUpUser()">Click me</button>
+
+    <script src="myFunction.js"></script>
+  </body>
+</html>

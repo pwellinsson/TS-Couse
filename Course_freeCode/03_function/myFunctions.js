@@ -24,3 +24,23 @@ var loginUser = function (name, email, isPaid) {
 };
 signUpUser("Well", "wellinsson@me.com", 123456, true);
 loginUser("Wel", "well@me.com");
+// function getValue(value: number): boolean | string {
+//   if (value > 100) {
+//     return true;
+//   }
+//   return "200 OK";
+// }
+var getHero = function (s) {
+    return "";
+};
+var heros = ["spiderman", "deadpool", "ironman", "batman"];
+// const heros = [1, 2, 3, 4];
+heros.map(function (hero) {
+    return hero;
+});
+function consoleError(errmsg) {
+    console.log(errmsg);
+}
+function handleError(errmsg) {
+    throw new Error(errmsg);
+}
